@@ -1,8 +1,9 @@
-# docker-rss-tfree
+# docker-rss-tfreecat
 
 클리앙 나스당의 시효니입니당 님이 만드신 rss parser를 담은 docker 이미지. 자세한 내용은 아래 출처를 참고바람.
 
-> <https://www.clien.net/service/board/cm_nas/11498642> <https://www.clien.net/service/board/cm_nas/11269138>
+> <https://www.clien.net/service/board/cm_nas/11498642>
+> <https://www.clien.net/service/board/cm_nas/11269138>
 
 ## Usage
 
@@ -13,7 +14,7 @@ docker run -d \
     --name=<container name> \
     --network=bridge \
     -p <local port you want>:8080 \
-    wiserain/rss-tfree
+    wiserain/rss-tfreecat
 ```
 
 docker-compose.yml:
@@ -23,7 +24,7 @@ version: '2'
 
 services:
   rss-tfree:
-    image: wiserain/rss-tfree:latest
+    image: wiserain/rss-tfreecat:latest
     container_name: <container name>
     restart: always
     network: bridge
